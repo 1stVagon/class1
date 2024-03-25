@@ -8,7 +8,7 @@
         public int age = 1000;
         public string vocation = "огненный демон";
         public string appereance = "живой огненный шар с глазами и ртом";
-        public string colour = "обычно оранжево-желтый";
+        public string color = "обычно оранжево-желтый";
         public string size = "варьируется в зависимости от типа и количества топлива";
         public string place = "живет в замке Хаула";
         public string born = "рожден в пространстве";
@@ -58,7 +58,6 @@
         }
         public void MovingHouse(int on_off)
         {
-            Random random = new Random();
             int engine = on_off;
 
             if (engine == 0)
