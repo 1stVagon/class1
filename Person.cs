@@ -1,22 +1,61 @@
 ﻿namespace first21_03
+
 {
-    public class Person
+
+    public class Calcifer
     {
-        public string name = "Calcifier";
+        public string name = "Кальцифер";
         public int age = 1000;
-        public string vocation = "fire demon";
-        public string appereance = "a living fireball with eyes and mounth";
-        public string colour = "it's usually orange and yellow";
-        public string size = "varies according to type and quantity of fuel";
-        public string place = "live in Hawl's castle";
-        public string born = "born in the space";
-        public string abilities = "Magical abilities, fiery nature, future foresigh";
-        public string role = "Source of energy and driving force of the Moving Castle";
-        public string personality = "Intelligent, witty, sense of humor, loyal friend";
-        public string power = "fulfill the wishes of his master";
-        public string charm = "Cheerful and eccentric personality, popular with viewers";
-        public string emotion = "Prone to occasional mood";
-        public string wisdom = "Prossesses great wisdom and insight";
+        public string vocation = "огненный демон";
+        public string appereance = "живой огненный шар с глазами и ртом";
+        public string color = "обычно оранжево-желтый";
+        public string size = "варьируется в зависимости от типа и количества топлива";
+        public string place = "живет в замке Хаула";
+        public string born = "рожден в космосе";
+        public string abilities = "Магические способности, огненная природа, видение будущего";
+        public string role = "Источник энергии и движущая сила Ходячего замка";
+        public string personality = "Умный, находчивый, чувство юмора, верный друг";
+        public string power = "выполнить желания своего хозяина";
+        public string charm = "Веселая и эксцентричная личность, популярная у зрителей";
+        public string emotion = "склонен к временным перепадам настроения";
+        public string wisdom = "обладает великой мудростью и пониманием";
+
+
+        public void ChangeColor()
+        {
+            Random random = new Random();
+
+            // Генерируем случайные значения R, G, B для создания цвета
+            int red = random.Next(2) == 0 ? 0 : 255;
+            int green = random.Next(2) == 0 ? 0 : 255;
+            int blue = random.Next(2) == 0 ? 0 : 255;
+
+            if (green == 255)
+            {
+                red = 0;
+                blue = 0;
+            }
+
+            if (blue == 255)
+            {
+                red = 0;
+                green = 0;
+            }
+
+            if (red == 255)
+            {
+                green = 0;
+                blue = 0;
+            }
+
+            if (red == 255 && green == 0 && blue == 0)
+                Console.WriteLine("Цвет Кальцифера: Красный");
+            else if (red == 0 && green == 255 && blue == 0)
+                Console.WriteLine("Цвет Кальцифера: Зеленый");
+            else if (red == 0 && green == 0 && blue == 255)
+                Console.WriteLine("Цвет Кальцифера: Синий");
+
+        }
 
         public void Print()
         {
@@ -25,7 +64,7 @@
                 $"\nAge: {age}" +
                 $"\nVocation: {vocation}" +
                 $"\nAppereance: {appereance}" +
-                $"\nColour: {colour}" +
+                $"\nColor: {color}" +
                 $"\nSize: {size}" +
                 $"\nPlace: {place}" +
                 $"\nBorn: {born}" +
@@ -37,33 +76,6 @@
                 $"\nEmotion: {emotion}" +
                 $"\nWisdom: {wisdom}");
         }
-
-        public void StartMovingCastle()
-        {
-            Console.WriteLine("Calcifer brings the Moving Castle to life.");
-        }
-
-        public void AssistInAdventures(string prediction)
-        {
-            Console.WriteLine($"Calcifer predicts: {prediction}");
-        }
-
-        public void FulfillWish(string wish)
-        {
-            Console.WriteLine($"Calcifer grants the wish: {wish}");
-        }
-
-        public void PlayfulBanter()
-        {
-            Console.WriteLine("Calcifer jokes and teases, creating a lively atmosphere.");
-        }
-
-        public void ShowDevotion()
-        {
-            Console.WriteLine("Calcifer shows loyalty and readiness to sacrifice for his friends.");
-        }
-
-        public string wish = "";
 
     }
 }

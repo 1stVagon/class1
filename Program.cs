@@ -15,7 +15,15 @@ person.Print();
 person1.Print();
 */
 
-Person calcifier = new Person();
+Calcifer calcifier = new Calcifer();
 
 calcifier.Print();
+Console.WriteLine("");
+calcifier.ChangeColor();
+
+
+
+
+
+    
 
