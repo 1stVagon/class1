@@ -6,20 +6,19 @@
     {
         public string name = "Кальцифер";
         public int age = 1000;
-        public string vocation = "огненный демон";
-        public string appereance = "живой огненный шар с глазами и ртом";
-        public string color = "обычно оранжево-желтый";
-        public string size = "варьируется в зависимости от типа и количества топлива";
-        public string place = "живет в замке Хаула";
-        public string born = "рожден в космосе";
-        public string abilities = "Магические способности, огненная природа, видение будущего";
-        public string role = "Источник энергии и движущая сила Ходячего замка";
-        public string personality = "Умный, находчивый, чувство юмора, верный друг";
-        public string power = "выполнить желания своего хозяина";
-        public string charm = "Веселая и эксцентричная личность, популярная у зрителей";
-        public string emotion = "склонен к временным перепадам настроения";
-        public string wisdom = "обладает великой мудростью и пониманием";
-
+        public string vocation = "fire demon";
+        public string appereance = "a living fireball with eyes and mounth";
+        public string colour = "it's usually orange and yellow";
+        public string size = "varies according to type and quantity of fuel";
+        public string place = "live in Hawl's castle";
+        public string born = "born in the space";
+        public string abilities = "Magical abilities, fiery nature, future foresigh";
+        public string role = "Source of energy and driving force of the Moving Castle";
+        public string personality = "Intelligent, witty, sense of humor, loyal friend";
+        public string power = "fulfill the wishes of his master";
+        public string charm = "Cheerful and eccentric personality, popular with viewers";
+        public string emotion = "Prone to occasional mood";
+        public string wisdom = "Prossesses great wisdom and insight";
 
         public void ChangeColor()
         {
@@ -56,7 +55,21 @@
                 Console.WriteLine("Цвет Кальцифера: Синий");
 
         }
+        public void MovingHouse(int on_off)
+        {
+            Random random = new Random();
+            int engine = on_off;
 
+            if (engine == 0)
+                Console.WriteLine("Увы, но мы стоим!");
+            else if (engine == 1)
+                Console.WriteLine("Кальцифер зажег двигатель! Едем дальше!");
+        }
+        public void HeatOven()
+        {
+
+
+        }
         public void Print()
         {
             Console.WriteLine(

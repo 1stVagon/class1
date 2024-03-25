@@ -20,10 +20,4 @@ Calcifer calcifier = new Calcifer();
 calcifier.Print();
 Console.WriteLine("");
 calcifier.ChangeColor();
-
-
-
-
-
-    
-
+calcifier.MovingHouse(0);
