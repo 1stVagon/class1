@@ -67,7 +67,8 @@
         }
         public void HeatOven()
         {
-
+            string u = Console.ReadLine();
+            Console.WriteLine(u);
 
         }
         public void Print()
