@@ -1,6 +1,5 @@
 ﻿using first21_03;
 
-
 /*
 Person person = new Person(); // создаем объект, экземпляр
 Person person1 = new Person();
@@ -21,6 +20,7 @@ Methods methods = new Methods();
 
 calcifer.Print();
 Console.WriteLine("");
+
 methods.ChangeColor();
 methods.MovingHouse(0);
 methods.HeatOven();

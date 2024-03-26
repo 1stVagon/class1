@@ -32,11 +32,26 @@ namespace first21_03
             }
 
             if (red == 255 && green == 0 && blue == 0)
-                Console.WriteLine("Цвет Кальцифера: Красный");
+            {
+                Console.Write("Цвет Кальцифера: ");
+                Console.ForegroundColor = ConsoleColor.Red; // устанавливаем цвет
+                Console.WriteLine("Красный");
+                Console.ResetColor(); // сбрасываем в стандартный
+            }    
             else if (red == 0 && green == 255 && blue == 0)
-                Console.WriteLine("Цвет Кальцифера: Зеленый");
+            {
+                Console.Write("Цвет Кальцифера: ");
+                Console.ForegroundColor = ConsoleColor.Green; // устанавливаем цвет
+                Console.WriteLine("Зеленый");
+                Console.ResetColor(); // сбрасываем в стандартный
+            }
             else if (red == 0 && green == 0 && blue == 255)
-                Console.WriteLine("Цвет Кальцифера: Синий");
+            {
+                Console.Write("Цвет Кальцифера: ");
+                Console.ForegroundColor = ConsoleColor.Blue; // устанавливаем цвет
+                Console.WriteLine("Синий");
+                Console.ResetColor(); // сбрасываем в стандартный
+            }
 
         }
         public void MovingHouse(int engine)
