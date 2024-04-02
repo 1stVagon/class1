@@ -15,13 +15,13 @@ person.Print();
 person1.Print();
 */
 
-Calcifer calcifer = new Calcifer();
-Methods methods = new Methods();
+Calcifer Calcifer = new Calcifer();
+Methods Methods = new Methods();
 
-calcifer.Print();
+Calcifer.Print();
 Console.WriteLine("");
 
-methods.ChangeColor();
-methods.MovingHouse(0);
+Methods.ChangeColor();
+Methods.MovingHouse(0);
 Console.WriteLine("");
-methods.Dialog1();
+Methods.Dialog1();

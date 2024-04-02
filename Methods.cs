@@ -85,6 +85,10 @@ namespace first21_03
                 Dialog1();
             }
         }
+        public void Dialog2()
+        {
+            
+        }
 
     }
 }
