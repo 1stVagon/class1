@@ -23,4 +23,5 @@ Console.WriteLine("");
 
 methods.ChangeColor();
 methods.MovingHouse(0);
-methods.HeatOven();
+Console.WriteLine("");
+methods.Dialog1();
