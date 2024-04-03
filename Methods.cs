@@ -93,6 +93,7 @@ namespace first21_03
                 Console.WriteLine("Поехали");
             else
                 Console.WriteLine("Стоим!");
+                AddLogs();
         }
         public void FiresPower()
         {
