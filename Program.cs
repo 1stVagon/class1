@@ -25,3 +25,7 @@ Methods.ChangeColor();
 Methods.MovingHouse(0);
 Console.WriteLine("");
 Methods.Dialog1();
+Console.WriteLine("");
+Methods.AddLogs();
+Console.WriteLine("");
+Methods.FiresPower();

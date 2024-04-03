@@ -85,10 +85,29 @@ namespace first21_03
                 Dialog1();
             }
         }
-        public void Dialog2()
+        public void AddLogs()
         {
-            
+            Console.Write("Введиет количество бревен которое хотите подбросить: ");
+            int addLogs = Convert.ToInt32(Console.ReadLine());
+            if (addLogs > 0)
+                Console.WriteLine("Поехали");
+            else
+                Console.WriteLine("Стоим!");
         }
-
+        public void FiresPower()
+        {
+            Console.WriteLine("Скажите что-нибудь кадьциферу!" + "\n1.bebebe" + "\n2. ути мой сладкий");
+            string choose = Console.ReadLine();
+            if (choose == "1")
+            {
+                Console.WriteLine("Вы усилили пыл Кальцифера!");
+                FiresPower();
+            }
+            else if (choose == "2")
+            {
+                Console.WriteLine("Вы уменьшили пыл Кальцифера!");
+                FiresPower();
+            }
+        }
     }
 }
